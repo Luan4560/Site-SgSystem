@@ -8,24 +8,25 @@ p {
   line-height: 20px;
 }
 .header {
-  /* position: fixed; */
-  /* top: 0; */
   width: 100%;
   padding: 15px 0;
   z-index: 10;
+  top: 0;
 }
 
 header img {
   width: 36px;
   height: 36px;
 }
-
 .header h1 {
+  margin-bottom: 5px;
+}
+
+.header h1 a {
   font-weight: bold;
   color: #5a5a5acc;
   font-size: 20px;
   text-transform: uppercase;
-  margin-bottom: 5px;
 }
 
 header .container {
@@ -33,6 +34,8 @@ header .container {
   align-items: center;
   margin: 0 32px;
   text-align: left;
+  margin-left: 45px;
+  height: 18px;
 }
 
 .header_menu ul {
@@ -54,25 +57,18 @@ header .container {
 }
 
 .introducao {
-  width: 100%;
+  width: 1150px;
   height: 300px;
   background: url("./images/bg1.jpg") no-repeat center;
-  /* margin-top: 55px; */
   background-size: cover;
-  text-align: left;
   padding-top: 120px;
+  margin-left: 48px;
 }
 
 .introducao h2 {
   font-size: 25px;
   color: white;
-  /* font-weight: bold; */
-  /* text-transform: uppercase; */
-  margin: 90px 0 10px 108px;
-  /* text-align: center; */
-}
-
-.content-section {
+  margin: 90px 0 10px 110px;
 }
 
 .content-section p {
@@ -84,19 +80,59 @@ header .container {
   line-height: 1;
 }
 
-.content-section span {
+.dc-center {
+  margin-left: 15px;
+  color: white;
+}
+
+.dc-sign {
   margin-left: 60px;
 }
 
-.dc-center {
-  color: black;
-  margin: px;
+.dc-second {
+  margin-left: 5px;
 }
 
 .btn {
-  /* border: 3px solid #000000cc; */
   background: #fff;
   padding: 10px 35px;
-  color: black;
-  margin: 50px 0 0 100px;
+  color: #000000cc;
+  margin: 50px 0 0 106px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.depoiments {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+.depoiments hr {
+  border: 1px solid #5a5a5acc;
+  width: 80px;
+  margin-bottom: -10px;
+}
+
+.depoiments img {
+  height: 92px;
+  width: 92px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.depoiments h2 {
+  font-weight: bold;
+  color: #5a5a5acc;
+}
+
+.box-depoiments {
+  height: 400px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  color: #000000cc;
+  font-style: italic;
 }
