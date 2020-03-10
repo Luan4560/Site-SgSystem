@@ -2,52 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <title>SG System | ERP</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="/Logo.png" alt="" />
-        <h2>SG System</h2>
+      <div class="header-container">
+        <div class="logo">
+          <img src="/Logo.png" alt="" />
+          <h2>SG System</h2>
+        </div>
+
+        <div class="header-nav">
+          <nav>
+            <ul>
+              <li>Locação Festas</li>
+              <li>Industria</li>
+              <li>Varejista</li>
+              <li>Financeiro</li>
+              <li>Serviços</li>
+              <li>Oficinas</li>
+              <li>Distribuidoras e Atacadistas</li>
+              <li>Sobre</li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li>Locação Festas</li>
-          <li>Industria</li>
-          <li>Varejista</li>
-          <li>Financeiro</li>
-          <li>Serviços</li>
-          <li>Oficinas</li>
-          <li>Distribuidoras e Atacadistas</li>
-          <li>Sobre</li>
-        </ul>
-      </nav>
     </header>
 
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="/images/bg-1.png" style="width: 100%" />
+        <div class="intro-group">
+          <h2>Sg System</h2>
+          <p>Decisões eficientes <br> = <br> Sucesso no seu negócio</p>
+          <button class="button"><span>Conheça </span></button>
+        </div>
+      </div>
 
-  <div class="slidershow middle">
-    <div class="slides">
-      <input type="radio" name="r" id="r1" checked />
-      <input type="radio" name="r" id="r2" />
+      <div class="mySlides fade bd-2">
+        <div class="content-top"></div>
+          <img src="/images/bg-2.jpeg" style="width: 100%" />
+          <div class="content"></div>
+        </div>
 
-        <div class="slide s1">
-          <img src="/images/bg-1.jpg" alt="" />
-         </div>
-
-    <div class="slide">
-    <img src="/images/bg-2.jpeg" alt="" />
-  </div>
-
+      <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+      <a class="next" onclick="plusSlides(1)">&#10095</a>
+      <br>
+     
     </div>
-    <div class="navigation">
-      
-      <label for="r1" class="bar"></label>
-      <label for="r2" class="bar"></label>
 
-     </div>
-    </div>
-  </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

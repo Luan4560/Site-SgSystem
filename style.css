@@ -1,114 +1,241 @@
 * {
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 100%;
+  height: 100vh;
 }
 
-header {
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 54px;
+  height: 52px;
+}
+
+.logo {
   display: flex;
   align-items: center;
 }
 
-header img {
+.logo > h2 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #666;
+}
+
+.logo img {
   width: 36px;
   height: 36px;
 }
 
-header ul {
+.header-nav nav ul {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-left: 24px;
+  margin: 0 15px;
 }
 
-header li {
+.header-nav nav ul li {
+  margin: 0 15px;
   list-style: none;
-  margin-right: 40px;
 }
 
-header li:hover {
-  border-bottom: solid #666;
+.header-nav li:hover {
+  border-bottom: 2px solid #666;
   cursor: pointer;
 }
 
-header .logo {
-  display: flex;
-  color: #666;
-  align-items: center;
-  margin-left: 80px;
-  margin-bottom: 4px;
+.slideshow-container {
+  width: 1100px;
+  background: no-repeat center;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+}
+.slideshow-container > img {
+  background: no-repeat center;
+  background-size: cover;
+  margin: auto;
+  top: 11000px;
 }
 
-.slidershow {
-  z-index: auto;
-  width: 1150px;
-  height: 400px;
-  overflow: hidden;
-  margin-top: -75px;
+.mySlides > img {
+  height: 500px;
+  /* border: 1px solid #ddd; */
 }
 
-.middle {
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.navigation {
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-
-.bar {
-  background: #ccc;
-  width: 12px;
-  height: 12px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  margin: 6px;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.bar:hover {
-  background: #666;
-}
-
-input[name="r"] {
-  position: absolute;
-  visibility: hidden;
-}
-
-.slides {
-  width: 500%;
-  height: 100%;
-  display: flex;
-}
-
-.slide {
-  width: 20%;
-  transition: 0.6s;
-}
-
-.slide img {
+  bottom: 8px;
   width: 100%;
-  height: 100%;
+  text-align: center;
 }
 
-#r1:checked ~ .s1 {
-  margin-left: 0;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-#r2:checked ~ .s1 {
-  margin-left: -20%;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: absolute; /* Position the background text */
+  top: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  height: 42px;
+  left: 1px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: absolute; /* Position the background text */
+  bottom: 23px; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  height: 42px;
+  left: 1px;
+}
+
+.intro-group {
+  position: absolute;
+  margin-top: -185px;
+  margin-left: 80px;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+
+.button {
+  background-color: #ddd;
+  border: none;
+  color: #222222ee;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px 15px;
+  font-weight: bold;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
