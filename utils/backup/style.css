@@ -1,0 +1,663 @@
+body {
+  font-family: "Segoe UI", Verdana, Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-black {
+  display: block;
+  overflow: hidden;
+  background-color: #000;
+  padding: 10px;
+}
+
+.logo-topo {
+  width: 100px;
+  height: 22px;
+}
+.nav-div-linkmobile {
+  display: block;
+}
+.nav-div-linkpc {
+  display: none;
+}
+.nav-div-logo {
+  float: left;
+}
+.nav-link-mobile {
+  float: right;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+}
+.nav-link-mobile:hover {
+  background-color: #0087ff;
+  cursor: pointer;
+}
+
+.sct-artigo {
+  height: 600px;
+  display: block;
+  overflow: hidden;
+}
+
+.cloudImg {
+  background-image: url("../assets/images/Cloud.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.locFestasImg {
+  background-image: url("../assets/images/LocFestas.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.industriaImg {
+  background-image: url("../assets/images/Industria.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.varejistaImg {
+  background-image: url("../assets/images/Varejista.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.financeiroImg {
+  background-image: url("../assets/images/Financeiro.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.servicosImg {
+  background-image: url("../assets/images/Servicos.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.oficinasImg {
+  background-image: url("../assets/images/Oficina.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.distribuidorasImg {
+  background-image: url("../assets/images/Distribuidora.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.locfestasRightImgLocacao {
+  background-image: url("../assets/images/img-locacaofestas/Locacao.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.locfestasLeftImgEntrega {
+  background-image: url("../assets/images/img-locacaofestas/Entrega.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.locfestasLeftImgDevolucao {
+  background-image: url("../assets/images/img-locacaofestas/Devolucao.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.industriaLeftImgCompProduto {
+  background-image: url("../assets/images/img-locacaofestas/ComposicaoProduto.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.industriaRigthImgOrdemProducao {
+  background-image: url("../assets/images/img-locacaofestas/OrdemProducao.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.industriaLeftImgVenda {
+  background-image: url("../assets/images/img-locacaofestas/Venda.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.varejistaRigthImgPdv {
+  background-image: url("../assets/images/img-locacaofestas/Pdv.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.varejistaLeftImgVenda {
+  background-image: url("../assets/images/img-locacaofestas/Venda.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.varejistaRigthImgPdvCadProduto {
+  background-image: url("../assets/images/img-locacaofestas/PdvCadProduto.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.financeiroLeftImgContaPagar {
+  background-image: url("../assets/images/img-locacaofestas/ContaPagar.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.financeiroRigthImgContaReceber {
+  background-image: url("../assets/images/img-locacaofestas/ContaReceber.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.financeiroLeftImgCaixa {
+  background-image: url("../assets/images/img-locacaofestas/Caixa.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.servicosLeftImgCadServicos {
+  background-image: url("../assets/images/img-locacaofestas/CadServico.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.servicosRigthImgContaReceber {
+  background-image: url("../assets/images/img-locacaofestas/ContaReceber.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.servicosLeftImgFiltrosOS {
+  background-image: url("../assets/images/img-locacaofestas/FiltroOS.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.oficinasRigthImgCadOficinaServico {
+  background-image: url("../assets/images/img-locacaofestas/CadOficinaServico.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.oficinasLeftImgOficinaManutencao {
+  background-image: url("../assets/images/img-locacaofestas/OficinaManutencao.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.oficinasRigthImgOficinaLembretes {
+  background-image: url("../assets/images/img-locacaofestas/OficinaLembretes.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.distribuidoraLeftImgVenda {
+  background-image: url("../assets/images/img-locacaofestas/Venda.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.distribuidoraRigthImgPrecificarProd {
+  background-image: url("../assets/images/img-locacaofestas/PrecificarProdutos.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.distribuidoraLeftImgAjustarEstoque {
+  background-image: url("../assets/images/img-locacaofestas/AjustarEstoque.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 1px;
+}
+
+.sct-artigo-text {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 65%;
+}
+
+.sct-artigo-text-titulo {
+  font-size: 2em;
+  color: #000;
+  margin-bottom: 1px;
+}
+
+.sct-artigo-text-descricao {
+  color: #000;
+  font-size: 1.4em;
+}
+
+.explicacao {
+  display: block;
+  overflow: hidden;
+  background-color: #303030;
+}
+
+.explicacao-group {
+  overflow: hidden;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.explicacao-tit {
+  color: #fff;
+  font-size: 3em;
+}
+
+.explicacao-descr {
+  /*line-height: 30px;*/
+  display: block;
+  color: #fff;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.rodape {
+  overflow: hidden;
+  color: #d1d1d1;
+  background-color: #000;
+  padding-top: 20px;
+}
+
+.rodape1 {
+  float: none;
+  display: block;
+}
+
+.rodape2 {
+  float: none;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 60px;
+}
+
+.rodape3 {
+  float: none;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 60px;
+}
+
+.social {
+  clear: both;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+}
+
+.contato-ti {
+  display: block;
+  color: #7a7a7a;
+}
+
+.contato {
+  display: block;
+  font-size: 1.3em;
+}
+
+.rodapelogo {
+  margin-left: 60px;
+}
+
+.linksocial {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+.mapasite {
+  text-decoration: none;
+  color: #787878;
+  font-size: 1.2em;
+}
+
+.mapasite:hover {
+  color: #d1d1d1;
+}
+
+.nav-link-pc:hover {
+  color: #fff;
+}
+
+.textoArtigoDir {
+  margin-top: 10%;
+  margin-left: 70%;
+}
+
+.textoArtigoDirTitulo {
+  font-size: 2em;
+  color: #000;
+  margin-bottom: 1px;
+}
+
+.textoArtigoDirDescricao {
+  color: #000;
+  font-size: 1.4em;
+}
+
+.corbranco {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .nav-link-mobile {
+    display: none;
+  }
+
+  .nav-div-linkpc {
+    display: block;
+    float: right;
+    font-size: 0.9em;
+  }
+
+  .nav-link-pc {
+    text-decoration: none;
+    color: #d1d1d1;
+    padding: 5px 10px;
+  }
+
+  .nav-black {
+    z-index: 10;
+    padding-left: 60px;
+  }
+
+  .sct-artigo {
+    height: 600px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .cloudImg {
+    background-image: url("../assets/images/Cloud.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .locFestasImg {
+    background-image: url("../assets/images/LocFestas.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .industriaImg {
+    background-image: url("../assets/images/Industria.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .varejistaImg {
+    background-image: url("../assets/images/Varejista.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .financeiroImg {
+    background-image: url("../assets/images/Financeiro.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .servicosImg {
+    background-image: url("../assets/images/Servicos.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .oficinasImg {
+    background-image: url("../assets/images/Oficina.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .distribuidorasImg {
+    background-image: url("../assets/images/Distribuidora.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .locfestasRightImgLocacao {
+    background-image: url("../assets/images/img-locacaofestas/Locacao.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .locfestasLeftImgEntrega {
+    background-image: url("../assets/images/img-locacaofestas/Entrega.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .locfestasLeftImgDevolucao {
+    background-image: url("../assets/images/img-locacaofestas/Devolucao.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .industriaLeftImgCompProduto {
+    background-image: url("../assets/images/img-locacaofestas/ComposicaoProduto.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .industriaRigthImgOrdemProducao {
+    background-image: url("../assets/images/img-locacaofestas/OrdemProducao.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .industriaLeftImgVenda {
+    background-image: url("../assets/images/img-locacaofestas/Venda.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 1px;
+  }
+
+  .sct-artigo-text {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 60%;
+  }
+
+  .sct-artigo-text-titulo {
+    font-size: 3em;
+    color: #000;
+    margin-bottom: 1px;
+  }
+
+  .sct-artigo-text-descricao {
+    color: #000;
+    font-size: 1.2em;
+  }
+
+  .explicacao {
+    display: block;
+    overflow: hidden;
+    background-color: #303030;
+  }
+
+  .explicacao-group {
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .explicacao-tit {
+    color: #fff;
+    font-size: 3em;
+  }
+
+  .explicacao-descr {
+    /*line-height: 30px;*/
+    display: block;
+    color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .rodape {
+    overflow: hidden;
+    color: #d1d1d1;
+    background-color: #000;
+    padding-top: 20px;
+  }
+
+  .rodape1 {
+    float: left;
+    width: 25%;
+  }
+
+  .rodape2 {
+    float: left;
+    width: 341.33px;
+  }
+
+  .rodape3 {
+    float: left;
+    width: 33.33%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .social {
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+  }
+
+  .contato-ti {
+    display: block;
+    color: #7a7a7a;
+  }
+
+  .contato {
+    display: block;
+    font-size: 1.2em;
+  }
+
+  .rodapelogo {
+    margin-left: 60px;
+  }
+
+  .linksocial {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .mapasite {
+    text-decoration: none;
+    color: #787878;
+    font-size: 1em;
+  }
+
+  .mapasite:hover {
+    color: #d1d1d1;
+  }
+
+  .nav-link-pc:hover {
+    color: #fff;
+  }
+
+  .textoArtigoDir {
+    margin-top: 10%;
+    margin-left: 65%;
+    margin-right: 10px;
+  }
+
+  .textoArtigoDirTitulo {
+    font-size: 3em;
+    color: #000;
+    margin-bottom: 1px;
+  }
+
+  .textoArtigoDirDescricao {
+    color: #000;
+    font-size: 1.4em;
+  }
+
+  .corbranco {
+    color: #fff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-div-linkpc {
+    font-size: 1em;
+    margin-right: 10px;
+  }
+
+  .nav-link-pc {
+    font-size: 1.2em;
+  }
+
+  .sct-artigo-text-descricao {
+    font-size: 1.3em;
+  }
+
+  .explicacao-descr {
+    font-size: 1.3em;
+  }
+
+  .social {
+    border-top: 1px solid #454545;
+  }
+
+  .corbranco {
+    color: #fff;
+  }
+}
